@@ -1,15 +1,14 @@
 import "../styles/Interests.css";
 
-function Extracaricular() {
+function Extracaricular({extracaricular}) {
   return (
   <>
-    <div style={{marginTop:"1rem"}}>Extracaricular</div>
+    
     <ul className="ul">
-    <li>Recycling Club</li>
-    <li>Gardening Club</li>
-    <li>Book Club</li>
+    <li>{extracaricular}</li>
+   
     </ul>
-    <hr/>
+
   </>
   );
 }

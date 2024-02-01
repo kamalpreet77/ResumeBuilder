@@ -10,6 +10,7 @@ import interests from './data/InterestsData';
 import skills from './data/SkillsData';
 import educationSection from './data/EducationData';
 import experiences from './data/ExperienceData';
+import extracaricular from './data/ExtracaricularData';
 
 
 function App() {
@@ -64,10 +65,19 @@ function App() {
 
     {experiences.length>0 &&(<hr/>)}
 
+    <div style={{marginTop:"1rem"}}>Extracaricular</div>
+       {
+        extracaricular.map(extracaricular=><Extracaricular
+          extracaricular={extracaricular.extra}
+          ></Extracaricular>)
+
+       }
+
+    <hr/>
     
      
     
-    <Extracaricular/>
+    
 
     </div>
     </>
