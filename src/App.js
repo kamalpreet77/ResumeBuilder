@@ -64,16 +64,15 @@ function App() {
        }
 
     {experiences.length>0 &&(<hr/>)}
-
-    <div style={{marginTop:"1rem"}}>Extracaricular</div>
+    {extracaricular.length>0 &&(
+    <div style={{marginTop:"1rem"}}>Extracaricular</div>)}
        {
         extracaricular.map(extracaricular=><Extracaricular
           extracaricular={extracaricular.extra}
           ></Extracaricular>)
 
        }
-
-    <hr/>
+     {extracaricular.length>0 && (<hr/>)}
     
      
     
