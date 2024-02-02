@@ -11,6 +11,7 @@ import skills from './data/SkillsData';
 import educationSection from './data/EducationData';
 import experiences from './data/ExperienceData';
 import extracaricular from './data/ExtracaricularData';
+import Print from "./components/Print.js"
 
 
 function App() {
@@ -73,6 +74,10 @@ function App() {
 
        }
      {extracaricular.length>0 && (<hr/>)}
+     <div>
+     <Print>print</Print>
+     </div>
+  
     
      
     
